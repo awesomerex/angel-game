@@ -1,7 +1,7 @@
 {
-  "name": "blank-splatjs-project",
+  "name": "Alchemy Shooter",
   "version": "0.0.0",
-  "description": "Blank SplatJS Project",
+  "description": "JSLou 6-hr game jam",
   "main": "index.js",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "build-js": "browserify game.js -o index.js",
     "build": "npm run lint-js && npm run build-js"
   },
-  "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com)",
+  "author": "Rex Soriano <awesomerex@gmail.com>",
   "license": "MIT",
   "jshintConfig": {
     "camelcase": true,
