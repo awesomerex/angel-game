@@ -65,14 +65,15 @@ game.scenes.add("title", new Splat.Scene(canvas, function() {
 									 canvas.height/3, 20, 20);
 	scene.impSpawn.color = "orange";
 	scene.impSpawn.spawn = function () {
-		var enemy = new Splat.Entity(this.x, this.y, 20, 20);
+		var random = Math.floor((Math.random()* canvas.height) + 1);
+		var enemy = new Splat.Entity(this.x, random, 20, 20);
 		enemy.color = randomColor();
 		scene.enemies.push(enemy);
 	};
 	scene.Spawns = [this.impSpawn];
 	scene.enemies = [];
 
-	this.timers.spawnEnemy = new Splat.Timer(undefined, 5000, function(){
+	this.timers.spawnEnemy = new Splat.Timer(undefined, 2000, function(){
 		//enemy.color = "orange";
 		scene.impSpawn.spawn();
 		console.log("imp spawned");
